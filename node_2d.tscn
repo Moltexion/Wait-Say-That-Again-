@@ -1,5 +1,10 @@
 [gd_scene format=3 uid="uid://bqbf01073subm"]
 
+[ext_resource type="FontFile" uid="uid://fsx7x2s7x0v5" path="res://Fonts/determination/determination.ttf" id="1_wtcfe"]
+
+[sub_resource type="Theme" id="Theme_y32ns"]
+default_font = ExtResource("1_wtcfe")
+
 [node name="Node2D" type="Node2D" unique_id=1377050704]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=524740473]
@@ -27,3 +32,16 @@ offset_right = 179.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "^"
+
+[node name="TextEdit" type="TextEdit" parent="CanvasLayer/Control" unique_id=1595208266]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -229.0
+offset_right = 87.630005
+offset_bottom = -158.81
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_y32ns")
+wrap_mode = 1

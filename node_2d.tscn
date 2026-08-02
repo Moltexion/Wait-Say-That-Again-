@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bqbf01073subm"]
 
-[ext_resource type="FontFile" uid="uid://fsx7x2s7x0v5" path="res://Fonts/determination/determination.ttf" id="1_wtcfe"]
+[ext_resource type="FontFile" uid="uid://b7ukod74gd6ms" path="res://Fonts/GrapeSoda.ttf" id="1_wtcfe"]
+[ext_resource type="FontFile" uid="uid://djjrixaqxt1j6" path="res://Fonts/KiwiSoda.ttf" id="2_0e48y"]
 
 [sub_resource type="Theme" id="Theme_y32ns"]
 default_font = ExtResource("1_wtcfe")
@@ -33,15 +34,33 @@ grow_horizontal = 2
 grow_vertical = 2
 text = "^"
 
+[node name="TextEdit2" type="TextEdit" parent="CanvasLayer/Control" unique_id=1680829314]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -69.0
+offset_top = -421.0
+offset_right = 18.630005
+offset_bottom = -426.02502
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_y32ns")
+theme_override_fonts/font = ExtResource("2_0e48y")
+text = "This is Kiwi Soda."
+wrap_mode = 1
+
 [node name="TextEdit" type="TextEdit" parent="CanvasLayer/Control" unique_id=1595208266]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = -229.0
-offset_right = 87.630005
-offset_bottom = -158.81
+offset_left = -68.0
+offset_top = -380.0
+offset_right = 19.630005
+offset_bottom = -385.02502
 grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_y32ns")
+text = "This is Grape Soda"
 wrap_mode = 1

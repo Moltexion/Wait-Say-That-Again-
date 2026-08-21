@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bhwyrygt5a1sh"
-path="res://.godot/imported/NoteBook.png-0b5d9ebd54d0c0c7b6a078f235596ab2.ctex"
+uid="uid://cknpnnk24kh81"
+path="res://.godot/imported/NoteBook.png-2e862e869af76d6332f48fd8a54b0c48.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://NoteBook.png"
-dest_files=["res://.godot/imported/NoteBook.png-0b5d9ebd54d0c0c7b6a078f235596ab2.ctex"]
+source_file="res://Sprites/NoteBook.png"
+dest_files=["res://.godot/imported/NoteBook.png-2e862e869af76d6332f48fd8a54b0c48.ctex"]
 
 [params]
 

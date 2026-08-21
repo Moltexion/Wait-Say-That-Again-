@@ -2,7 +2,7 @@
 
 [ext_resource type="FontFile" uid="uid://b7ukod74gd6ms" path="res://Fonts/GrapeSoda.ttf" id="1_wtcfe"]
 [ext_resource type="FontFile" uid="uid://djjrixaqxt1j6" path="res://Fonts/KiwiSoda.ttf" id="2_0e48y"]
-[ext_resource type="Texture2D" uid="uid://bhwyrygt5a1sh" path="res://NoteBook.png" id="3_epypp"]
+[ext_resource type="Script" uid="uid://ct1vibbwwssx8" path="res://left_page.gd" id="3_0hol4"]
 
 [sub_resource type="Theme" id="Theme_y32ns"]
 default_font = ExtResource("1_wtcfe")
@@ -21,17 +21,17 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TextEdit2" type="TextEdit" parent="CanvasLayer/Control" unique_id=1680829314]
+[node name="Right Page" type="TextEdit" parent="CanvasLayer/Control" unique_id=1217940894]
 z_index = 1
 z_as_relative = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 258.0
-offset_top = 172.0
-offset_right = -594.0
-offset_bottom = -204.06
+offset_left = 611.0
+offset_top = 170.0
+offset_right = -241.0
+offset_bottom = -206.06
 grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_y32ns")
@@ -39,8 +39,32 @@ theme_override_colors/font_color = Color(0.46244204, 0.36546963, 0.18898854, 1)
 theme_override_fonts/font = ExtResource("2_0e48y")
 theme_override_font_sizes/font_size = 18
 theme_override_styles/normal = SubResource("StyleBoxEmpty_ig0fn")
-text = "This is Kiwi Soda."
+text = "This is Kiwi Soda. ewqewwwrehlaurewaiiiiiiierhewahrieuwahriuehwaiu rewiuahriewahfiuehdwaiufewiuah fdiuw ahfehwaif hewaiufhdwhaifhdisahfehwahfdhsafhew iuafhdiu wahfiue whafiu dhsai fhewiuah fiueh waiufhewiua hfeiuwah fiuewha fiuehawfiuehwa fheiuwa hfeiuwa fhdiusahfi ehwkjafdhsa iufhewiuahfiudhaiuf heiuwahfiudsah ufehwiuafh diusha fiuewiuah fdiusah fiues hafd hsaiufewhafiudhwaiuf ehwaiufdhsaiufhewiahf diushaiuf hewiuahf diushafiu ehwaiufhd iusa"
 wrap_mode = 1
+autowrap_mode = 1
+
+[node name="Left Page" type="TextEdit" parent="CanvasLayer/Control" unique_id=1680829314]
+z_index = 1
+z_as_relative = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 256.0
+offset_top = 171.0
+offset_right = -596.0
+offset_bottom = -205.06
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_y32ns")
+theme_override_colors/font_color = Color(0.46244204, 0.36546963, 0.18898854, 1)
+theme_override_fonts/font = ExtResource("2_0e48y")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ig0fn")
+text = "This is Kiwi Soda. ewqewwwrehlaurewaiiiiiiierhewahrieuwahriuehwaiu rewiuahriewahfiuehdwaiufewiuah fdiuw ahfehwaif hewaiufhdwhaifhdisahfehwahfdhsafhew iuafhdiu wahfiue whafiu dhsai fhewiuah fiueh waiufhewiua hfeiuwah fiuewha fiuehawfiuehwa fheiuwa hfeiuwa fhdiusahfi ehwkjafdhsa iufhewiuahfiudhaiuf heiuwahfiudsah ufehwiuafh diusha fiuewiuah fdiusah fiues hafd hsaiufewhafiudhwaiuf ehwaiufdhsaiufhewiahf diushaiuf hewiuahf diushafiu ehwaiufhd iusa"
+wrap_mode = 1
+autowrap_mode = 1
+script = ExtResource("3_0hol4")
 
 [node name="Button" type="Button" parent="CanvasLayer/Control" unique_id=247542311]
 layout_mode = 1
@@ -55,8 +79,3 @@ offset_right = 173.0
 grow_horizontal = 2
 grow_vertical = 0
 text = "^"
-
-[node name="NoteBook" type="Sprite2D" parent="CanvasLayer/Control" unique_id=576007743]
-position = Vector2(577.00006, 369)
-scale = Vector2(3.86, 3.855)
-texture = ExtResource("3_epypp")

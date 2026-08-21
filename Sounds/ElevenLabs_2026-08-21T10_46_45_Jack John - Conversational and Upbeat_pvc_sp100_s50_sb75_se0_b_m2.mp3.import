@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dddawrvputm7y"
+path="res://.godot/imported/ElevenLabs_2026-08-21T10_46_45_Jack John - Conversational and Upbeat_pvc_sp100_s50_sb75_se0_b_m2.mp3-57c22a266156e9b9df27c9b07a1924be.mp3str"
+
+[deps]
+
+source_file="res://Sounds/ElevenLabs_2026-08-21T10_46_45_Jack John - Conversational and Upbeat_pvc_sp100_s50_sb75_se0_b_m2.mp3"
+dest_files=["res://.godot/imported/ElevenLabs_2026-08-21T10_46_45_Jack John - Conversational and Upbeat_pvc_sp100_s50_sb75_se0_b_m2.mp3-57c22a266156e9b9df27c9b07a1924be.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

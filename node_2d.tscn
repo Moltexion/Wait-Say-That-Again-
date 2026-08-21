@@ -1,8 +1,98 @@
 [gd_scene format=3 uid="uid://bqbf01073subm"]
 
+[ext_resource type="Script" uid="uid://vdsm26pnfxk4" path="res://Main.gd" id="1_q6r6c"]
 [ext_resource type="FontFile" uid="uid://b7ukod74gd6ms" path="res://Fonts/GrapeSoda.ttf" id="1_wtcfe"]
 [ext_resource type="FontFile" uid="uid://djjrixaqxt1j6" path="res://Fonts/KiwiSoda.ttf" id="2_0e48y"]
-[ext_resource type="Script" uid="uid://ct1vibbwwssx8" path="res://left_page.gd" id="3_0hol4"]
+[ext_resource type="PackedScene" uid="uid://b35nvv3ikqxxe" path="res://animated_sprite_2d.tscn" id="2_kdubu"]
+[ext_resource type="Texture2D" uid="uid://br3mbf8jq4snr" path="res://Sprites/NoteBook-Sheet.png" id="4_0hol4"]
+[ext_resource type="Script" uid="uid://bgo2rvejp161d" path="res://noteBook.gd" id="4_d21ai"]
+[ext_resource type="Script" uid="uid://ct1vibbwwssx8" path="res://left_page.gd" id="7_ir8iy"]
+[ext_resource type="Script" uid="uid://cig3wr1gtmm2a" path="res://notebookButton.gd" id="7_rj586"]
+[ext_resource type="AudioStream" uid="uid://dddawrvputm7y" path="res://Sounds/ElevenLabs_2026-08-21T10_46_45_Jack John - Conversational and Upbeat_pvc_sp100_s50_sb75_se0_b_m2.mp3" id="8_rj586"]
+[ext_resource type="Script" uid="uid://dkfsfqufdfpgt" path="res://paragraph.gd" id="9_4d7sh"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d21ai"]
+atlas = ExtResource("4_0hol4")
+region = Rect2(0, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rj586"]
+atlas = ExtResource("4_0hol4")
+region = Rect2(384, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4d7sh"]
+atlas = ExtResource("4_0hol4")
+region = Rect2(768, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ir8iy"]
+atlas = ExtResource("4_0hol4")
+region = Rect2(1152, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hqns4"]
+atlas = ExtResource("4_0hol4")
+region = Rect2(1536, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x0ka3"]
+atlas = ExtResource("4_0hol4")
+region = Rect2(1536, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0h7mo"]
+atlas = ExtResource("4_0hol4")
+region = Rect2(1152, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nr8wp"]
+atlas = ExtResource("4_0hol4")
+region = Rect2(768, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d2bti"]
+atlas = ExtResource("4_0hol4")
+region = Rect2(384, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ta5nu"]
+atlas = ExtResource("4_0hol4")
+region = Rect2(0, 0, 384, 216)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4d7sh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d21ai")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rj586")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4d7sh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ir8iy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hqns4")
+}],
+"loop": 1,
+"name": &"Close",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x0ka3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0h7mo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nr8wp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d2bti")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ta5nu")
+}],
+"loop": 1,
+"name": &"Open",
+"speed": 10.0
+}]
 
 [sub_resource type="Theme" id="Theme_y32ns"]
 default_font = ExtResource("1_wtcfe")
@@ -20,8 +110,19 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_q6r6c")
+
+[node name="Notebook" parent="CanvasLayer/Control" unique_id=1092261395 instance=ExtResource("2_kdubu")]
+position = Vector2(574.5, 328.905)
+scale = Vector2(2.997396, 2.9814816)
+sprite_frames = SubResource("SpriteFrames_4d7sh")
+animation = &"Open"
+frame = 0
+frame_progress = 0.0
+script = ExtResource("4_d21ai")
 
 [node name="Right Page" type="TextEdit" parent="CanvasLayer/Control" unique_id=1217940894]
+visible = false
 z_index = 1
 z_as_relative = false
 layout_mode = 1
@@ -50,21 +151,22 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 256.0
-offset_top = 171.0
-offset_right = -596.0
-offset_bottom = -205.06
+offset_left = 206.0
+offset_top = 175.0
+offset_right = -646.0
+offset_bottom = -201.06
 grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_y32ns")
-theme_override_colors/font_color = Color(0.46244204, 0.36546963, 0.18898854, 1)
+theme_override_colors/search_result_border_color = Color(0.9801207, 0.00043125154, 0.90790015, 0.4)
+theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
+theme_override_colors/current_line_color = Color(0.89396393, 0.00048920093, 0.86310744, 1)
 theme_override_fonts/font = ExtResource("2_0e48y")
 theme_override_font_sizes/font_size = 18
 theme_override_styles/normal = SubResource("StyleBoxEmpty_ig0fn")
-text = "This is Kiwi Soda. ewqewwwrehlaurewaiiiiiiierhewahrieuwahriuehwaiu rewiuahriewahfiuehdwaiufewiuah fdiuw ahfehwaif hewaiufhdwhaifhdisahfehwahfdhsafhew iuafhdiu wahfiue whafiu dhsai fhewiuah fiueh waiufhewiua hfeiuwah fiuewha fiuehawfiuehwa fheiuwa hfeiuwa fhdiusahfi ehwkjafdhsa iufhewiuahfiudhaiuf heiuwahfiudsah ufehwiuafh diusha fiuewiuah fdiusah fiues hafd hsaiufewhafiudhwaiuf ehwaiufdhsaiufhewiahf diushaiuf hewiuahf diushafiu ehwaiufhd iusa"
 wrap_mode = 1
 autowrap_mode = 1
-script = ExtResource("3_0hol4")
+script = ExtResource("7_ir8iy")
 
 [node name="Button" type="Button" parent="CanvasLayer/Control" unique_id=247542311]
 layout_mode = 1
@@ -79,3 +181,21 @@ offset_right = 173.0
 grow_horizontal = 2
 grow_vertical = 0
 text = "^"
+script = ExtResource("7_rj586")
+
+[node name="AudioListener2D" type="AudioListener2D" parent="." unique_id=636674263]
+position = Vector2(576, 339)
+current = true
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1149384001]
+position = Vector2(10, 7)
+stream = ExtResource("8_rj586")
+max_distance = 1165.0
+attenuation = 0.9012492
+panning_strength = 2.5
+
+[node name="Paragraph" type="Node2D" parent="." unique_id=331194381]
+script = ExtResource("9_4d7sh")
+
+[connection signal="text_changed" from="CanvasLayer/Control/Left Page" to="CanvasLayer/Control/Left Page" method="_on_text_changed"]
+[connection signal="pressed" from="CanvasLayer/Control/Button" to="CanvasLayer/Control" method="_on_button_pressed"]

@@ -2,78 +2,60 @@
 
 [ext_resource type="Script" uid="uid://vdsm26pnfxk4" path="res://Main.gd" id="1_q6r6c"]
 [ext_resource type="FontFile" uid="uid://b7ukod74gd6ms" path="res://Fonts/GrapeSoda.ttf" id="1_wtcfe"]
-[ext_resource type="FontFile" uid="uid://djjrixaqxt1j6" path="res://Fonts/KiwiSoda.ttf" id="2_0e48y"]
 [ext_resource type="PackedScene" uid="uid://b35nvv3ikqxxe" path="res://animated_sprite_2d.tscn" id="2_kdubu"]
-[ext_resource type="Texture2D" uid="uid://br3mbf8jq4snr" path="res://Sprites/NoteBook-Sheet.png" id="4_0hol4"]
+[ext_resource type="Texture2D" uid="uid://2ug75f5rd88s" path="res://Sprites/NoteBookSHEET.png" id="3_ir8iy"]
 [ext_resource type="Script" uid="uid://bgo2rvejp161d" path="res://noteBook.gd" id="4_d21ai"]
 [ext_resource type="Script" uid="uid://ct1vibbwwssx8" path="res://left_page.gd" id="7_ir8iy"]
 [ext_resource type="Script" uid="uid://cig3wr1gtmm2a" path="res://notebookButton.gd" id="7_rj586"]
 [ext_resource type="AudioStream" uid="uid://dddawrvputm7y" path="res://Sounds/ElevenLabs_2026-08-21T10_46_45_Jack John - Conversational and Upbeat_pvc_sp100_s50_sb75_se0_b_m2.mp3" id="8_rj586"]
 [ext_resource type="Script" uid="uid://dkfsfqufdfpgt" path="res://paragraph.gd" id="9_4d7sh"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_d21ai"]
-atlas = ExtResource("4_0hol4")
+[sub_resource type="AtlasTexture" id="AtlasTexture_hqns4"]
+atlas = ExtResource("3_ir8iy")
 region = Rect2(0, 0, 384, 216)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_rj586"]
-atlas = ExtResource("4_0hol4")
-region = Rect2(384, 0, 384, 216)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_4d7sh"]
-atlas = ExtResource("4_0hol4")
-region = Rect2(768, 0, 384, 216)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ir8iy"]
-atlas = ExtResource("4_0hol4")
-region = Rect2(1152, 0, 384, 216)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_hqns4"]
-atlas = ExtResource("4_0hol4")
-region = Rect2(1536, 0, 384, 216)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_x0ka3"]
-atlas = ExtResource("4_0hol4")
-region = Rect2(1536, 0, 384, 216)
+atlas = ExtResource("3_ir8iy")
+region = Rect2(384, 0, 384, 216)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0h7mo"]
-atlas = ExtResource("4_0hol4")
-region = Rect2(1152, 0, 384, 216)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_nr8wp"]
-atlas = ExtResource("4_0hol4")
+atlas = ExtResource("3_ir8iy")
 region = Rect2(768, 0, 384, 216)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_nr8wp"]
+atlas = ExtResource("3_ir8iy")
+region = Rect2(1152, 0, 384, 216)
+
 [sub_resource type="AtlasTexture" id="AtlasTexture_d2bti"]
-atlas = ExtResource("4_0hol4")
-region = Rect2(384, 0, 384, 216)
+atlas = ExtResource("3_ir8iy")
+region = Rect2(1536, 0, 384, 216)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ta5nu"]
-atlas = ExtResource("4_0hol4")
+atlas = ExtResource("3_ir8iy")
+region = Rect2(1536, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_flf07"]
+atlas = ExtResource("3_ir8iy")
+region = Rect2(1152, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k73cj"]
+atlas = ExtResource("3_ir8iy")
+region = Rect2(768, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rjqkl"]
+atlas = ExtResource("3_ir8iy")
+region = Rect2(384, 0, 384, 216)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fs4d3"]
+atlas = ExtResource("3_ir8iy")
 region = Rect2(0, 0, 384, 216)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_4d7sh"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_d21ai")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_rj586")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_4d7sh")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ir8iy")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_hqns4")
-}],
-"loop": 1,
-"name": &"Close",
-"speed": 10.0
 }, {
-"frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_x0ka3")
 }, {
@@ -85,19 +67,51 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_d2bti")
+}],
+"loop": 1,
+"name": &"Close",
+"speed": 10.0
 }, {
+"frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_ta5nu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_flf07")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k73cj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rjqkl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fs4d3")
 }],
 "loop": 1,
 "name": &"Open",
 "speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_ir8iy")
+}],
+"loop": 1,
+"name": &"new_animation",
+"speed": 5.0
 }]
 
 [sub_resource type="Theme" id="Theme_y32ns"]
 default_font = ExtResource("1_wtcfe")
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ig0fn"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f0nty"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lv3wf"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8e3i1"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_4e5vs"]
+viewport_path = NodePath("CanvasLayer/Control/SubViewport")
 
 [node name="Node2D" type="Node2D" unique_id=1377050704]
 
@@ -108,65 +122,22 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -29.0
+offset_top = 6.0
+offset_right = -29.0
+offset_bottom = 6.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_q6r6c")
 
 [node name="Notebook" parent="CanvasLayer/Control" unique_id=1092261395 instance=ExtResource("2_kdubu")]
-position = Vector2(574.5, 328.905)
-scale = Vector2(2.997396, 2.9814816)
+position = Vector2(587, 1087)
+scale = Vector2(4.021, 4)
 sprite_frames = SubResource("SpriteFrames_4d7sh")
 animation = &"Open"
 frame = 0
-frame_progress = 0.0
+frame_progress = 0.34274635
 script = ExtResource("4_d21ai")
-
-[node name="Right Page" type="TextEdit" parent="CanvasLayer/Control" unique_id=1217940894]
-visible = false
-z_index = 1
-z_as_relative = false
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 611.0
-offset_top = 170.0
-offset_right = -241.0
-offset_bottom = -206.06
-grow_horizontal = 2
-grow_vertical = 2
-theme = SubResource("Theme_y32ns")
-theme_override_colors/font_color = Color(0.46244204, 0.36546963, 0.18898854, 1)
-theme_override_fonts/font = ExtResource("2_0e48y")
-theme_override_font_sizes/font_size = 18
-theme_override_styles/normal = SubResource("StyleBoxEmpty_ig0fn")
-text = "This is Kiwi Soda. ewqewwwrehlaurewaiiiiiiierhewahrieuwahriuehwaiu rewiuahriewahfiuehdwaiufewiuah fdiuw ahfehwaif hewaiufhdwhaifhdisahfehwahfdhsafhew iuafhdiu wahfiue whafiu dhsai fhewiuah fiueh waiufhewiua hfeiuwah fiuewha fiuehawfiuehwa fheiuwa hfeiuwa fhdiusahfi ehwkjafdhsa iufhewiuahfiudhaiuf heiuwahfiudsah ufehwiuafh diusha fiuewiuah fdiusah fiues hafd hsaiufewhafiudhwaiuf ehwaiufdhsaiufhewiahf diushaiuf hewiuahf diushafiu ehwaiufhd iusa"
-wrap_mode = 1
-autowrap_mode = 1
-
-[node name="Left Page" type="TextEdit" parent="CanvasLayer/Control" unique_id=1680829314]
-z_index = 1
-z_as_relative = false
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 206.0
-offset_top = 175.0
-offset_right = -646.0
-offset_bottom = -201.06
-grow_horizontal = 2
-grow_vertical = 2
-theme = SubResource("Theme_y32ns")
-theme_override_colors/search_result_border_color = Color(0.9801207, 0.00043125154, 0.90790015, 0.4)
-theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
-theme_override_colors/current_line_color = Color(0.89396393, 0.00048920093, 0.86310744, 1)
-theme_override_fonts/font = ExtResource("2_0e48y")
-theme_override_font_sizes/font_size = 18
-theme_override_styles/normal = SubResource("StyleBoxEmpty_ig0fn")
-wrap_mode = 1
-autowrap_mode = 1
-script = ExtResource("7_ir8iy")
 
 [node name="Button" type="Button" parent="CanvasLayer/Control" unique_id=247542311]
 layout_mode = 1
@@ -183,8 +154,37 @@ grow_vertical = 0
 text = "^"
 script = ExtResource("7_rj586")
 
+[node name="SubViewport" type="SubViewport" parent="CanvasLayer/Control" unique_id=45394889]
+size = Vector2i(768, 414)
+
+[node name="Left Page" type="TextEdit" parent="CanvasLayer/Control/SubViewport" unique_id=1680829314]
+z_index = 1
+z_as_relative = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 296.0
+offset_top = 195.0
+offset_right = -216.0
+offset_bottom = -181.06
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_y32ns")
+theme_override_colors/search_result_border_color = Color(0.9801207, 0.00043125154, 0.90790015, 0.4)
+theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
+theme_override_colors/current_line_color = Color(0.89396393, 0.00048920093, 0.86310744, 1)
+theme_override_fonts/font = ExtResource("1_wtcfe")
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("StyleBoxEmpty_f0nty")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_lv3wf")
+theme_override_styles/read_only = SubResource("StyleBoxEmpty_8e3i1")
+placeholder_text = "This is a placeholder text"
+wrap_mode = 1
+autowrap_mode = 1
+script = ExtResource("7_ir8iy")
+
 [node name="AudioListener2D" type="AudioListener2D" parent="." unique_id=636674263]
-position = Vector2(576, 339)
+position = Vector2(513, 241)
 current = true
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1149384001]
@@ -197,5 +197,10 @@ panning_strength = 2.5
 [node name="Paragraph" type="Node2D" parent="." unique_id=331194381]
 script = ExtResource("9_4d7sh")
 
-[connection signal="text_changed" from="CanvasLayer/Control/Left Page" to="CanvasLayer/Control/Left Page" method="_on_text_changed"]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=918087252]
+position = Vector2(522, 292)
+scale = Vector2(1, 0.93)
+texture = SubResource("ViewportTexture_4e5vs")
+
 [connection signal="pressed" from="CanvasLayer/Control/Button" to="CanvasLayer/Control" method="_on_button_pressed"]
+[connection signal="text_changed" from="CanvasLayer/Control/SubViewport/Left Page" to="CanvasLayer/Control/SubViewport/Left Page" method="_on_text_changed"]

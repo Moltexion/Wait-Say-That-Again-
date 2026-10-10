@@ -6,7 +6,7 @@ extends TextEdit
 func _ready() -> void:
 	pass
 	var playerInput = textEdit.text
-	
+	# this is a text
 	if para.begins_with(playerInput):
 		textEdit.add_theme_color_override("font_color", Color.DARK_GREEN)
 	else:
